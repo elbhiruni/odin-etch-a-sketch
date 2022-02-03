@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Etch-a-Sketch</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Londrina+Sketch&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Style -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <h1>Etch-a-Sketch</h1>
+    </header>
+    <main class="main flex">
+      <div class="settings flex">
+        <button id="clearBtn" class="btn">Clear</button>
+        <div id="sizeValue">16 x 16</div>
+        <input id="sizeSlider" type="range" value="16" min="1" max="64" />
+      </div>
+      <div id="sketch" class="sketch grid"></div>
+    </main>
+    <footer class="footer">
+      <p>
+        By elbhiruni
+        <a
+          href="https://github.com/elbhiruni"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="fab fa-github"></i
+        ></a>
+      </p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
